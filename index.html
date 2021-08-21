@@ -6,13 +6,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac-Book-Pro</title>
+    <!-- bootstrap style link  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom style link  -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="container my-5">
 
+    <!-- header  -->
+    <header>
+        <h1 class="text-center text-decoration-underline text-primary pb-3">Mac Book Pro</h1>
+    </header>
+
+    <!-- main  -->
+    <main>
+        <section class="row product-details">
+            <!-- product images -->
+            <div class="col-md-6">
+                <img src="images/mac.png" alt="">
+            </div>
+
+            <!-- product details  -->
+            <div class="col-md-6">
+                <h2 class="fw-bold">Customize your Blue 24-inch iMac with Apple M1 chip</h2>
+                <p>Apple M1 chip with 8-core CPU with 4 performance core and 4 efficiency core, 7-core GPU and 16-core
+                    Neural Engine 8GB unified memory 256GB SSD storage Two Thunderboit/ USB 4 ports Magic Mouse Magic
+                    Keyboard- US English</p>
+
+                <!-- memory customization -->
+                <div class="memory my-3">
+                    <p class="fw-bold">Memory</p>
+                    <button id="memory8gb" type="button" class="btn btn-light my-2" value="0">8GB unified
+                        memory</button>
+                    <button id="memory16gb" type="button" class="btn btn-light my-2" value="180">16GB unified
+                        memory</button>
+                </div>
+
+                <!-- storage customization  -->
+                <div class="storage my-3">
+                    <p class="fw-bold">Storage</p>
+                    <button id="storage256gb" type="button" class="btn btn-light">256GB SSD storage</button>
+                    <button id="storage512gb" type="button" class="btn btn-light my-2">512GB SSD storage</button>
+                    <button id="storage1tb" type="button" class="btn btn-light my-2">1TB SSD storage</button>
+                </div>
+
+                <!-- delivery option  -->
+                <div class="delivery-option my-3">
+                    <p class="fw-bold">Choose your delivery option</p>
+                    <button id="deliveryFree" type="button" class="btn btn-light my-2">Friday, Aug 27 FREE Prime
+                        Delivery</button>
+                    <button id="deliveryCost" type="button" class="btn btn-light my-2">Sunday, Aug 22 Delivery charge
+                        $20</button>
+                </div>
+
+                <!-- price table  -->
+                <ul class="my-5">
+                    <!-- best price  -->
+                    <li class="row">
+                        <p class="col-6 fw-bold">Best Price
+                        <p class="col-3 fw-bold">$ <span id="bestPrice" class="fw-bold text-end">1299</span></2>
+                        </p>
+                    </li>
+                    <!-- memory price  -->
+                    <li class="row">
+                        <p class="col-6 fw-bold">Extra Memory Cost
+                        <p class="col-3 fw-bold">$ <span id="memoryPrice" class="fw-bold text-end">0</span></2>
+                        </p>
+                    </li>
+                    <!-- storage price  -->
+                    <li class="row">
+                        <p class="col-6 fw-bold">Extra Storage Cost
+                        <p class="col-3 fw-bold">$ <span id="storagePrice" class="fw-bold text-end">0</span></2>
+                        </p>
+                    </li>
+                    <!-- delivery cost  -->
+                    <li class="row">
+                        <p class="col-6 fw-bold">Delivery charge
+                        <p class="col-3 fw-bold">$ <span id="deliveryPrice" class="fw-bold text-end">0</span></2>
+                        </p>
+                    </li>
+                    <hr>
+                    <!-- total price  -->
+                    <li class="row">
+                        <p class="col-6 fw-bold">Total Price
+                        <p class="col-3 fw-bold">$ <span id="totalPrice" class="fw-bold text-end">1299</span></2>
+                        </p>
+                    </li>
+                    <!-- promo code  -->
+                    <li class="row">
+                        <p>Add Promo code</p>
+                        <div class="col-6">
+                            <input type="text" name="" id="inputCode" class="form-control">
+                        </div>
+                        <button id="applyCode" type="button" class="btn btn-primary col-3 fw-bold">Apply</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer  -->
+    <footer>
+        <hr>
+        <!-- final price after promo code  -->
+        <h1 class="text-center fw-bold">Total: $ <span id="finalPrice" class="final-total">1299</span></h1>
+    </footer>
+
+    <!-- bootstrap javascript link  -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom javascript link  -->
     <script src="js/script.js"></script>
 </body>
 
