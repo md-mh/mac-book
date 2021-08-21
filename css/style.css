@@ -8,3 +8,8 @@ body{
 img{
     width: 100%;
 }
+.memory button:hover, .storage button:hover, .delivery-option button:hover {
+    background-color: darkseagreen;
+    color: white;
+    font-weight: 500;
+}
